@@ -1,0 +1,168 @@
+.cubo{
+    background-color: #700600;
+    width: 400px;
+    height: 400px;
+}
+.circulo{
+    border-radius: 100%;
+    background-color: #000670;
+    width: 400px;
+    height: 400px;
+}
+@keyframes arcoiris{
+    0%{background-color: #ff0000;}
+    14%{background-color: #ff7f00;}
+    28%{background-color: #ffff00;}
+    42%{background-color: #00ff00;}
+    57%{background-color: #0000ff;}
+    71%{background-color: #4b0082;}
+    85%{background-color: #8b00ff;}
+    100%{background-color: #ff0000;}
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    animation: arcoiris 5s linear infinite;
+}
+*{
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+.container{
+    display: flex;
+    gap: 20px;
+}
+.cubo, .circulo{
+    flex: 0 0 auto;
+}
+@media (max-width: 900px){
+    .container{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width: 450px){
+    .cubo, .circulo{
+        width: 200px;
+        height: 200px;
+    }
+}
+@media (max-width: 300px){
+    .cubo, .circulo{
+        width: 150px;
+        height: 150px;
+    }
+}
+@media (max-width: 200px){
+    .cubo, .circulo{
+        width: 100px;
+        height: 100px;
+    }
+}
+@media (max-width: 100px){
+    .cubo, .circulo{
+        width: 50px;
+        height: 50px;
+    }
+}
+@media (max-width: 50px){
+    .cubo, .circulo{
+        width: 25px;
+        height: 25px;
+    }
+}   
+@media (max-width: 25px){
+    .cubo, .circulo{
+        width: 10px;
+        height: 10px;
+    }
+}
+@media (max-width: 10px){
+    .cubo, .circulo{
+        width: 5px;
+        height: 5px;
+    }
+}
+@media (max-width: 5px){
+    .cubo, .circulo{
+        width: 2px;
+        height: 2px;
+    }
+}
+@media (max-width: 2px){
+    .cubo, .circulo{
+        width: 1px;
+        height: 1px;
+    }
+}
+@media (max-width: 1px){
+    .cubo, .circulo{
+        width: 0.5px;
+        height: 0.5px;
+    }
+}
+@media (max-width: 0.5px){
+    .cubo, .circulo{
+        width: 0.1px;
+        height: 0.1px;
+    }
+}
+@media (max-width: 0.1px){
+    .cubo, .circulo{
+        width: 0.05px;
+        height: 0.05px;
+    }
+}
+@media (max-width: 0.05px){
+    .cubo, .circulo{
+        width: 0.01px;
+        height: 0.01px;
+    }
+}
+@media (max-width: 0.01px){
+    .cubo, .circulo{
+        width: 0.005px;
+        height: 0.005px;
+    }
+}
+@media (max-width: 0.005px){
+    .cubo, .circulo{
+        width: 0.001px;
+        height: 0.001px;
+    }
+}
+@media (max-width: 0.001px){
+    .cubo, .circulo{
+        width: 0.0005px;
+        height: 0.0005px;
+    }
+}
+@media (max-width: 0.0005px){
+    .cubo, .circulo{
+        width: 0.0001px;
+        height: 0.0001px;
+    }
+}
+@keyframes rebotar{
+    0%, 100%{transform: translateY(0);}
+    50%{transform: translateY(-50px);}
+}
+.cubo{
+    animation: rebotar 2s ease-in-out infinite;
+}
+.circulo{
+    animation: rebotar 2s ease-in-out infinite;
+    animation-delay: 1s;
+}
