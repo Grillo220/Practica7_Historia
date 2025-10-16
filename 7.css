@@ -10,14 +10,14 @@
     height: 400px;
 }
 @keyframes arcoiris{
-    0%{background-color: #ff0000;}
-    14%{background-color: #ff7f00;}
-    28%{background-color: #ffff00;}
-    42%{background-color: #00ff00;}
-    57%{background-color: #0000ff;}
-    71%{background-color: #4b0082;}
-    85%{background-color: #8b00ff;}
-    100%{background-color: #ff0000;}
+    0%{background-color: #005721;}
+    14%{background-color: #005a1b;}
+    28%{background-color: #008507;}
+    42%{background-color: #008500;}
+    57%{background-color: #00c00abe;}
+    71%{background-color: #00d123;}
+    85%{background-color: #00db12;}
+    100%{background-color: #00ff22;}
 }
 body{
     display: flex;
