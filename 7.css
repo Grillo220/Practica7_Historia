@@ -1,13 +1,110 @@
-.cubo{
-    background-color: #700600;
-    width: 400px;
-    height: 400px;
+
+
+body{
+    color: #000000;
+    text-align: center;
+    background-color: #000000;
+    animation: arcoiris 5s infinite;
+
 }
-.circulo{
-    border-radius: 100%;
-    background-color: #000670;
-    width: 400px;
-    height: 400px;
+h1{
+    font-size: 4em;
+    margin-top: 20vh;
+    text-shadow: 2px 2px 4px #000000;
+    text-decoration: underline;
+    text-underline-offset: 20px;
+    border: 16px solid #6b0000;
+    border-radius: 25px;
+    background-color: #880000;
+}
+h1:hover{
+    color: #e5ff00;
+}
+p{
+    font-size: 1.5em;
+    margin: 20px;
+    text-shadow: 1px 1px 2px #6b0000;
+    text-align: justify;
+    text-indent: 50px;
+    font-family: cursive;
+    border: 12px solid #ffff00;
+    border-radius: 35px;
+    padding: 25px;
+}
+p:hover{
+    color: #ffffff;
+    background-color: #000000;
+}
+h2{
+    font-size: 2em;
+    margin: 20px;
+    text-shadow: 1px 1px 2px #ffffff;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    color: #000000;
+}
+h2:hover{
+    color: #ffffff;
+}
+ol{
+    font-size: 1.2em;
+    margin: 20px;
+    text-shadow: 1px 1px 2px #000000;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+li{
+    margin: 10px;
+    text-shadow: 1px 1px 2px #000000;
+    text-align: left;
+    display: inline-block;
+    width: 45%;
+    vertical-align: top;
+    list-style-type: square;
+    padding-left: 20px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    transition: background-color 0.5s;
+    background-color: #1B5E20;
+}
+li:hover{
+    background-color: rgb(251, 255, 0);
+}
+a{
+    color: #00790c;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.5s;}
+a:hover{
+    color: #ff0000;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+img{
+    width: 300px;
+    height: auto;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px #000000;
+    transition: transform 0.5s;
+    border: 12px solid #ffff00;
+    background-color: #000000;
+    animation: rotar_imagen 10s linear infinite;
+}
+img:hover{
+    transform: scale(1.1);
+}
+@keyframes rotar_imagen{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}   
+nav{
+    margin-top: 20px;
 }
 @keyframes arcoiris{
     0%{background-color: #1B5E20;}    
@@ -19,153 +116,7 @@
     85%{background-color: #1E88E5;}  
     100%{background-color: #1B5E20;} 
 }
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    animation: arcoiris 5s linear infinite;
-}
-*{
-    box-sizing: border-box;
-}
-html, body{
-    height: 100%;
-}
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    background-color: #f0f0f0;
-}
-.container{
-    display: flex;
-    gap: 20px;
-}
-.cubo, .circulo{
-    flex: 0 0 auto;
-}
-@media (max-width: 900px){
-    .container{
-        flex-direction: column;
-        align-items: center;
-    }
-}
-@media (max-width: 450px){
-    .cubo, .circulo{
-        width: 200px;
-        height: 200px;
-    }
-}
-@media (max-width: 300px){
-    .cubo, .circulo{
-        width: 150px;
-        height: 150px;
-    }
-}
-@media (max-width: 200px){
-    .cubo, .circulo{
-        width: 100px;
-        height: 100px;
-    }
-}
-@media (max-width: 100px){
-    .cubo, .circulo{
-        width: 50px;
-        height: 50px;
-    }
-}
-@media (max-width: 50px){
-    .cubo, .circulo{
-        width: 25px;
-        height: 25px;
-    }
-}   
-@media (max-width: 25px){
-    .cubo, .circulo{
-        width: 10px;
-        height: 10px;
-    }
-}
-@media (max-width: 10px){
-    .cubo, .circulo{
-        width: 5px;
-        height: 5px;
-    }
-}
-@media (max-width: 5px){
-    .cubo, .circulo{
-        width: 2px;
-        height: 2px;
-    }
-}
-@media (max-width: 2px){
-    .cubo, .circulo{
-        width: 1px;
-        height: 1px;
-    }
-}
-@media (max-width: 1px){
-    .cubo, .circulo{
-        width: 0.5px;
-        height: 0.5px;
-    }
-}
-@media (max-width: 0.5px){
-    .cubo, .circulo{
-        width: 0.1px;
-        height: 0.1px;
-    }
-}
-@media (max-width: 0.1px){
-    .cubo, .circulo{
-        width: 0.05px;
-        height: 0.05px;
-    }
-}
-@media (max-width: 0.05px){
-    .cubo, .circulo{
-        width: 0.01px;
-        height: 0.01px;
-    }
-}
-@media (max-width: 0.01px){
-    .cubo, .circulo{
-        width: 0.005px;
-        height: 0.005px;
-    }
-}
-@media (max-width: 0.005px){
-    .cubo, .circulo{
-        width: 0.001px;
-        height: 0.001px;
-    }
-}
-@media (max-width: 0.001px){
-    .cubo, .circulo{
-        width: 0.0005px;
-        height: 0.0005px;
-    }
-}
-@media (max-width: 0.0005px){
-    .cubo, .circulo{
-        width: 0.0001px;
-        height: 0.0001px;
-    }
-}
-@keyframes rebotar{
-    0%, 100%{transform: translateY(0);}
-    50%{transform: translateY(-50px);}
-}
-.cubo{
-    animation: rebotar 2s ease-in-out infinite;
-}
-.circulo{
-    animation: rebotar 2s ease-in-out infinite;
-    animation-delay: 1s;
-}
+
 ul{
     list-style: none;
     padding: 0;
@@ -175,7 +126,7 @@ ul{
     max-width: 600px;
     margin: 20px auto;
     line-height: 1.6;
-    background-color: #fff;
+    background-color: #1B5E20;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -201,4 +152,27 @@ nav ul{
     gap: 10px;
     justify-content: center;
     margin-top: 20px;
+}
+table{
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 2px 4px #0000001a;
+    background-color: #DAA520;
+    border-radius: 8px;
+    overflow: hidden;
+    color: #333;
+    height: 500px;
+    margin-top: 200px;
+    font-weight: bolder;
+    text-shadow:2px 2px 4px #ffffff;
+    box-shadow: 0 0 20px 10px rgba(255, 255, 0, 0.7);   border: 10px solid #000000;
+    
+}
+table:hover{
+    background-color: #00d407;
+    transform: scale1(1);
+}
+img{
+    margin-top: 100px;
 }
