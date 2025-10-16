@@ -9,15 +9,15 @@
     width: 400px;
     height: 400px;
 }
-@keyframes arcoiris{
-    0%{background-color: #005721;}
-    14%{background-color: #005a1b;}
-    28%{background-color: #008507;}
-    42%{background-color: #008500;}
-    57%{background-color: #00c00abe;}
-    71%{background-color: #00d123;}
-    85%{background-color: #00db12;}
-    100%{background-color: #00ff22;}
+@keyframes arco
+    0%{background-color: #1B5E20;}    
+    14%{background-color: #2E7D32;}   
+    28%{background-color: #43A047;}  
+    42%{background-color: #FFD700;}  
+    57%{background-color: #DAA520;} 
+    71%{background-color: #4169E1;} 
+    85%{background-color: #1E88E5;}  
+    100%{background-color: #1B5E20;} 
 }
 body{
     display: flex;
