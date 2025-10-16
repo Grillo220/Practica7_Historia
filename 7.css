@@ -9,7 +9,7 @@
     width: 400px;
     height: 400px;
 }
-@keyframes arco
+@keyframes arcoiris{
     0%{background-color: #1B5E20;}    
     14%{background-color: #2E7D32;}   
     28%{background-color: #43A047;}  
