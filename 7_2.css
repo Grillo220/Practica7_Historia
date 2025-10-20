@@ -51,3 +51,37 @@ body {
 .tarjeta-content a:hover {
     background-color: #04505e;
 }
+.tarjeta {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px) rotate(3deg);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.tarjeta-content h2 {
+    transition: color 0.3s ease;
+}
+
+.tarjeta:hover .tarjeta-content h2 {
+    color: #0056b3;
+}
+
+.tarjeta-content p {
+    transition: color 0.3s ease;
+}
+
+.tarjeta:hover .tarjeta-content p {
+    color: #033d42;
+}
+
+.tarjeta-content a {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.tarjeta-content a:hover {
+    background-color: #04505e;
+    color: #c1e3ff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
