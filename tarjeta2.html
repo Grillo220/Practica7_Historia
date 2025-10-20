@@ -1,17 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8" >
-    <link rel="stylesheet" href="GG.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tarjeta — Gerardo A. García R.</title>
+  <link rel="stylesheet" href="GG.css">
 </head>
 <body>
-    <h1>Gerardo Antomio Garcia Romero</h1>
-    <h3>MATERIA FAVORITA:</h3>
-    <p>educacion fisica</p>
-    <img src="https://i.pinimg.com/1200x/25/f2/27/25f227ebae16631af75502757f5d89b3.jpg" alt="">
-    <a  href="inicio.html">
-    </a>
+  <main class="page" style="display:flex;align-items:center;justify-content:center;min-height:100vh;padding:2rem;background:linear-gradient(180deg,#eef2f7 0%, #f8fafc 100%);">
+    <article class="card" aria-label="Tarjeta de Gerardo Antonio García Romero">
+      <div class="tag">Estudiante</div>
+
+      <div class="card__media">
+        <img class="card__img" src="https://i.pinimg.com/1200x/25/f2/27/25f227ebae16631af75502757f5d89b3.jpg" alt="Ilustración de educación física">
+      </div>
+
+      <div class="card__body">
+        <h1>Gerardo Antonio García Romero</h1>
+        <h3 class="card__label">Materia favorita</h3>
+        <p class="muted">Educación física</p>
+
+        <div class="divider" aria-hidden="true"></div>
+
+        <a class="cta" href="inicio.html" title="Ir a inicio">Ir a inicio</a>
+      </div>
+    </article>
+  </main>
 </body>
 </html>
