@@ -17,7 +17,25 @@
                  0 0 40px rgba(255, 255, 255, 0.6),
                  0 0 60px rgba(255, 255, 255, 0.4);
 }
-
+@keyframes aurora {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+@keyframes shine {
+    from {
+        background-position: 
+            0% 50%,
+            center center,
+            0 0;
+    }
+    to {
+        background-position: 
+            100% 50%,
+            center center,
+            100px 100px;
+    }
+}
 body {
     min-height: 100vh;
     margin: 0;
@@ -46,7 +64,10 @@ body {
     position: relative;
     overflow-x: hidden;
 }
-
+@keyframes shimmer {
+    0%, 100% { transform: translateY(-20px) scale(1); opacity: 0.5; }
+    50% { transform: translateY(20px) scale(1.1); opacity: 0.8; }
+}
 body::before {
     content: '';
     position: fixed;
@@ -63,7 +84,7 @@ body::before {
 }
 
 .titulo {
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    background: linear-gradient(135deg, #b3001e, #45009e);
     text-align: center;
     text-shadow: 2px 2px 4px var(--text-shadow);
     width: 100%;
@@ -79,6 +100,7 @@ body::before {
     transform: scale(var(--scale-hover));
     text-shadow: var(--mega-glow);
     background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+    box-shadow: var(--mega-glow);
 }
 
 .titulo::before {
@@ -94,6 +116,9 @@ body::before {
 
 .titulo:hover::before {
     transform: rotate(180deg) scale(1.2);
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
 }
 
 .titulo h1 {
@@ -129,12 +154,13 @@ body::before {
     transform: scale(1.02) translateY(-5px);
     background: linear-gradient(135deg, var(--color-accent), var(--color-primary));
     box-shadow: var(--neon-glow);
+    text-shadow: var(--neon-glow);
 }
 
 .ancla {
-    background-color: #000000;
+    background-color: #ff002b;
     text-align: center;
-    text-shadow: 2px 2px 4px rgba(108, 0, 180, 0.6);
+    text-shadow: 2px 2px 4px rgb(153, 0, 255);
     box-sizing: border-box;
     transition: transform var(--transition-fast);
     padding: 8px 8px;
@@ -158,6 +184,9 @@ body::before {
     font-weight: 500;
     text-transform: uppercase;
     font-size: 0.9em;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0, 216, 228, 0.6);
+
 }
 
 .ancla a::before {
@@ -192,6 +221,8 @@ body::before {
 
 img {
     display: block;
+    align-items: center;
+    justify-content: center;
     margin-left: auto;
     margin-right: auto;
     padding: 0px;
@@ -252,14 +283,14 @@ img:hover {
     align-items: stretch;
     gap: 0px;
     width: 100%;
-    height: 180px;
+    height: 500px;
     box-sizing: border-box;
     transition: all var(--transition-normal);
 }
 
 .img img {
     flex: 0 0 180px;
-    width: 180px;
+    width: 580px;
     height: 100%;
     object-fit: cover;
     border: 6px double rgba(255, 255, 255, 0.3);
@@ -407,15 +438,19 @@ img:hover {
 }
 
 @media (min-width: 1200px) {
-    .contenedor {
-        transform: scale(1.05);
-    }
-    
-    .contenedor:hover {
-        transform: scale(1.08) translateY(-20px) rotate3d(1, 1, 0, 8deg);
-    }
-    
-    img:hover {
-        transform: scale(1.15) rotate3d(0, 1, 0, 20deg);
-    }
+     .contenedor {
+          transform: scale(1.05);
+     }
+
+     .contenedor:hover {
+          transform: scale(1.08) translateY(-20px) rotate3d(1, 1, 0, 8deg);
+     }
+
+     img {
+          transition: transform var(--transition-hover), box-shadow var(--transition-hover), filter var(--transition-hover);
+     }
+
+     img:hover {
+          transform: scale(1.15) rotate3d(0, 1, 0, 20deg);
+     }
 }
